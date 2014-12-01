@@ -1,0 +1,1 @@
+It's made by hand; I started from [this config](http://amitp.blogspot.fr/2011/08/emacs-custom-mode-line.html) and plugged colors from [a variant of the Solarized theme](https://github.com/purcell/color-theme-sanityinc-solarized).
