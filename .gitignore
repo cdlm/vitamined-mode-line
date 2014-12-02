@@ -1,1 +1,3 @@
 dist
+/vitamined-mode-line-pkg.el
+*.elc
