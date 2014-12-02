@@ -30,45 +30,60 @@
 
 ;;; Code:
 
-(defface mode-line-directory-face
+(defgroup vitamined-mode-line-faces nil
+  "VitamineD customize group"
+  :group 'faces
+  :link '(url-link :tag "Github" "https://github.com/cdlm/vitamined-mode-line"))
+
+(defface vitamined-mode-line-filename-face
   '((t (:inherit mode-line-buffer-id)))
-  "File path mode line face")
+  "File name mode line face"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-filename-face
+(defface vitamined-mode-line-directory-face
   '((t (:inherit mode-line-buffer-id)))
-  "File name mode line face")
+  "File path mode line face"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-position-face
+(defface vitamined-mode-line-position-face
   '((t (:inherit mode-line-face)))
-  "Buffer position indicator face")
+  "Buffer position indicator face"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-status-face
+(defface vitamined-mode-line-status-face
   '((t (:inherit mode-line-face)))
-  "General face for buffer status indicators")
+  "General face for buffer status indicators"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-modified-face
+(defface vitamined-mode-line-modified-face
   '((t (:inherit mode-line-status-face)))
-  "Face for buffer modified status indicator")
+  "Face for buffer modified status indicator"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-readonly-face
+(defface vitamined-mode-line-readonly-face
   '((t (:inherit mode-line-status-face)))
-  "Face for buffer read-only status indicator")
+  "Face for buffer read-only status indicator"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-narrowed-face
+(defface vitamined-mode-line-narrowed-face
   '((t (:inherit mode-line-status-face)))
-  "Face for buffer narrowed status indicator")
+  "Face for buffer narrowed status indicator"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-mode-face
+(defface vitamined-mode-line-mode-face
   '((t (:inherit mode-line-face)))
-  "Major mode indicator face")
+  "Major mode indicator face"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-minor-mode-face
+(defface vitamined-mode-line-minor-mode-face
   '((t (:inherit mode-line-mode-face)))
-  "Minor mode indicator face")
+  "Minor mode indicator face"
+  :group 'vitamined-mode-line-faces)
 
-(defface mode-line-process-face
+(defface vitamined-mode-line-process-face
   '((t (:inherit mode-line-face)))
-  "Mode line process face")
+  "Mode line process face"
+  :group 'vitamined-mode-line-faces)
 
 
 (setq-default mode-line-format
